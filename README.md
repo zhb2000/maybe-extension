@@ -1,6 +1,6 @@
-<h1 style="text-align: center">Maybe Extension for C++</h1>
+<h1 align="center">Maybe Extension for C++</h1>
 
-<p style="text-align: center"><b>English</b> | <a href="./README-zh.md">中文</a></p>
+<p align="center"><b>English</b> | <a href="./README-zh.md">中文</a></p>
 
 # Introduction
 C++ programmers usually use `std::optional<T>` as nullable values and `T *` as nullable references. However, the standard library doesn't provide a uniform interface to operate them. This library provides some extension methods for these "Maybe types". APIs are similar to Rust `Option`.

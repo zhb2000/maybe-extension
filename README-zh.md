@@ -1,6 +1,6 @@
-<h1 style="text-align: center">Maybe Extension for C++</h1>
+<h1 align="center">Maybe Extension for C++</h1>
 
-<p style="text-align: center"><a href="./README.md">English</a> | <b>中文</b></p>
+<p align="center"><a href="./README.md">English</a> | <b>中文</b></p>
 
 # 简介
 在 C++ 中通常用 `std::optional<T>` 表示可空的值，用 `T*` 表示可空引用。然而，标准库并没有为操作这些类型提供统一的接口。Maybe Extension 为这些 C++ 中的“可空类型”提供了一组扩展方法，API 跟 Rust 的 `Option` 非常相似。

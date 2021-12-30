@@ -456,8 +456,8 @@ namespace maybe_ext {
 namespace maybe_ext {
     template<detail::Nullable Maybe,
              class T = detail::contained_type_t<Maybe>>
-    T *as_unowned(Maybe & maybe) {
-        return maybe ? &(*maybe) : nullptr;
+    T *as_unowned(Maybe &maybe) {
+        return maybe ? std::addressof(*maybe) : nullptr;
     }
 }
 
@@ -850,14 +850,14 @@ namespace maybe_ext {
     template<detail::Nullable Maybe, class F>
     auto map(Maybe &&maybe, F f) requires requires {
         { f(*std::forward<Maybe>(maybe)) } -> detail::LValueRef; } {
-        return maybe ? &(f(*std::forward<Maybe>(maybe)))
+        return maybe ? std::addressof(f(*std::forward<Maybe>(maybe)))
                      : nullptr;
     }
 
     template<detail::Nullable Maybe, class F>
     auto operator|(Maybe &&maybe, detail::MapPartial<F> &&partial) requires requires {
         { partial.f(*std::forward<Maybe>(maybe)) } -> detail::LValueRef; } {
-        return maybe ? &(partial.f(*std::forward<Maybe>(maybe)))
+        return maybe ? std::addressof(partial.f(*std::forward<Maybe>(maybe)))
                      : nullptr;
     }
 }
