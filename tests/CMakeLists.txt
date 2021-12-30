@@ -8,7 +8,6 @@ include_directories(
 )
 
 set(MAYBE_TESTS
-        prelude.hpp
         maybe_test.cpp
         and_then_test.cpp
         and_test.cpp
@@ -28,14 +27,17 @@ set(MAYBE_TESTS
         convertor_test.cpp
         method_ptr_overload_test.cpp
         field_ptr_test.cpp
-        method_ptr_return_ref_test.cpp examples_test.cpp operator_bind_test.cpp flatten_test.cpp)
+        method_ptr_return_ref_test.cpp
+        examples_test.cpp
+        operator_bind_test.cpp
+        flatten_test.cpp)
 
-add_executable(maybe_test ${MAYBE_TESTS})
+add_executable(maybe_tests ${MAYBE_TESTS})
 
-target_link_libraries(maybe_test gtest gtest_main)
+target_link_libraries(maybe_tests gtest gtest_main)
 
 if (MSVC)
-    target_precompile_headers(maybe_test PRIVATE
+    target_precompile_headers(maybe_tests PRIVATE
             <iostream>
             <string>
             <optional>

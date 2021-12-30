@@ -4,6 +4,7 @@
 
 // region type_check.hpp
 
+
 #include <concepts>
 #include <optional>
 #include <type_traits>
@@ -53,6 +54,7 @@ namespace maybe_ext::detail {
 
 // region make_none.hpp
 
+
 #include <optional>
 
 namespace maybe_ext::detail {
@@ -70,6 +72,7 @@ namespace maybe_ext::detail {
 // endregion
 
 // region xor.hpp
+
 
 
 namespace maybe_ext::detail {
@@ -103,6 +106,7 @@ namespace maybe_ext {
 // endregion
 
 // region value_or_else.hpp
+
 
 
 namespace maybe_ext::detail {
@@ -140,6 +144,7 @@ namespace maybe_ext {
 // region value_or.hpp
 
 
+
 namespace maybe_ext::detail {
     template<class U>
     struct ValueOrPartial {
@@ -173,6 +178,7 @@ namespace maybe_ext {
 // endregion
 
 // region utils.hpp
+
 
 #include <concepts>
 
@@ -221,6 +227,7 @@ namespace maybe_ext::utils {
 
 // region or_else.hpp
 
+
 #include <concepts>
 #include <type_traits>
 
@@ -264,6 +271,7 @@ namespace maybe_ext {
 // region or.hpp
 
 
+
 namespace maybe_ext::detail {
     template<detail::Nullable Maybe>
     struct OrPartial {
@@ -292,6 +300,7 @@ namespace maybe_ext {
 // endregion
 
 // region flatten.hpp
+
 
 
 namespace maybe_ext::detail {
@@ -323,6 +332,7 @@ namespace maybe_ext {
 // endregion
 
 // region filter.hpp
+
 
 
 namespace maybe_ext::detail {
@@ -366,6 +376,7 @@ namespace maybe_ext {
 // region deref.hpp
 
 
+
 namespace maybe_ext::detail {
     struct DerefPartial {};
 }
@@ -389,6 +400,7 @@ namespace maybe_ext {
 // endregion
 
 // region contains.hpp
+
 
 
 namespace maybe_ext::detail {
@@ -422,6 +434,7 @@ namespace maybe_ext {
 
 // region cloned.hpp
 
+
 #include <optional>
 
 namespace maybe_ext::detail {
@@ -453,6 +466,7 @@ namespace maybe_ext {
 // region as_unowned.hpp
 
 
+
 namespace maybe_ext {
     template<detail::Nullable Maybe,
              class T = detail::contained_type_t<Maybe>>
@@ -464,6 +478,7 @@ namespace maybe_ext {
 // endregion
 
 // region member_ptr_adaptor.hpp
+
 
 #include <type_traits>
 
@@ -495,6 +510,7 @@ namespace maybe_ext::detail {
 // endregion
 
 // region map_or_else.hpp
+
 
 
 namespace maybe_ext::detail {
@@ -642,6 +658,7 @@ namespace maybe_ext {
 // endregion
 
 // region map_or.hpp
+
 
 
 namespace maybe_ext::detail {
@@ -795,6 +812,7 @@ namespace maybe_ext {
 // region map.hpp
 
 
+
 namespace maybe_ext::detail {
     template<class F>
     struct MapPartial {
@@ -945,6 +963,7 @@ namespace maybe_ext {
 // region operator_bind.hpp
 
 
+
 namespace maybe_ext::utils {
     template<detail::Nullable Maybe, class F>
     auto operator>>(Maybe &&maybe, F f) requires requires {
@@ -1038,6 +1057,7 @@ namespace maybe_ext::utils {
 // endregion
 
 // region and_then.hpp
+
 
 
 namespace maybe_ext::detail {
@@ -1196,6 +1216,7 @@ namespace maybe_ext {
 // endregion
 
 // region and.hpp
+
 
 
 namespace maybe_ext::detail {

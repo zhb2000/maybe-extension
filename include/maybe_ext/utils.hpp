@@ -1,4 +1,5 @@
 #pragma once
+
 #include <concepts>
 
 namespace maybe_ext::utils {

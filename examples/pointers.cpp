@@ -18,11 +18,11 @@ struct Node {
 };
 
 int main() {
-    //     a
-    //    / \
-    //   b   c
-    //  /
-    // d
+    /*    a
+         / \
+        b   c
+       /
+      d       */
     Node *a = new Node(), *b = new Node(), *c = new Node(), *d = new Node();
     a->lch = b;
     a->rch = c;

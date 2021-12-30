@@ -1,4 +1,5 @@
 #pragma once
+
 #include "detail/type_check.hpp"
 
 namespace maybe_ext::detail {

@@ -1,4 +1,5 @@
 #pragma once
+
 #include "detail/type_check.hpp"
 #include "detail/make_none.hpp"
 
