@@ -10,7 +10,7 @@
 # 如何使用
 语言版本：C++20
 
-这是个单头文件的库，只需要 include `single_include/maybe_ext/maybe_ext.hpp` 这个头文件。
+这是个单头文件的库，只需要包含 [single_include/maybe_ext/maybe_ext.hpp](https://github.com/zhb2000/maybe-extension/blob/master/single_include/maybe_ext/maybe_ext.hpp) 这个头文件。
 
 导入所有扩展方法：
 
@@ -65,7 +65,7 @@ Monad 和 functor 操作：
 - `const_rref_fn`
 
 # 示例
-你可以在 `examples` 文件夹中找到这些示例。
+示例代码可在 `examples` 文件夹中找到。你可以通过 [Wandbox](https://wandbox.org/permlink/XfdfY6TPn2ygyDpv) 或 [Compiler Explorer](https://godbolt.org/z/f37b8h3Y5) 在线运行代码。
 
 ## 串联可能失败的操作
 如果需要串联一系列可能失败的操作，那么 monadic operation 将派上用场。

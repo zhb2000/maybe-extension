@@ -10,7 +10,7 @@ Since C++ has no language support for extension methods yet, these "extension me
 # How to use
 Language version: C++20
 
-This is a single header library, you only need to include `single_include/maybe_ext/maybe_ext.hpp`.
+This is a single header library, you only need to include [single_include/maybe_ext/maybe_ext.hpp](https://github.com/zhb2000/maybe-extension/blob/master/single_include/maybe_ext/maybe_ext.hpp).
 
 Import all extension methods:
 
@@ -65,7 +65,7 @@ Utilities (in namespace `maybe_ext::utils`):
 - `const_rref_fn`
 
 # Examples
-You can find these examples in `examples` directory.
+Examples can be found in `examples` directory. You can run codes online via [Wandbox](https://wandbox.org/permlink/XfdfY6TPn2ygyDpv) or [Compiler Explorer](https://godbolt.org/z/f37b8h3Y5).
 
 ## Combine fallible operations
 Monadic operations are quite useful when you want to combine a series of fallible operations.
@@ -276,4 +276,4 @@ assert(m == optional<string>("method()"));
 # See also
 `Option` type in Rust: [Module std::option](https://doc.rust-lang.org/std/option/index.html), [Option in std::option](https://doc.rust-lang.org/std/option/enum.Option.html)
 
-C++23 provides [and_then](https://en.cppreference.com/w/cpp/utility/optional/and_then), [transform](https://en.cppreference.com/w/cpp/utility/optional/transform) and [or_else](https://en.cppreference.com/w/cpp/utility/optional/or_else) for [std::optional](https://en.cppreference.com/w/cpp/utility/optional). Here is the related proposal: [p0798R6 Monadic operations for std::optional](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2021/p0798r6.html).
+C++23 provides [and_then](https://en.cppreference.com/w/cpp/utility/optional/and_then), [transform](https://en.cppreference.com/w/cpp/utility/optional/transform), and [or_else](https://en.cppreference.com/w/cpp/utility/optional/or_else) for [std::optional](https://en.cppreference.com/w/cpp/utility/optional). Here is the related proposal: [p0798R6 Monadic operations for std::optional](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2021/p0798r6.html).

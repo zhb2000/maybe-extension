@@ -35,8 +35,7 @@ def print_graph(graph: Dict[str, List[str]]):
 
 def merge_headers(sorted_files: Iterable[str], proj_root: str, out_path: str):
     with open(out_path, mode='w', encoding='utf8') as out_file:
-        out_file.write('#pragma once\n' +
-                       '#ifndef MAYBE_EXT_HPP\n' +
+        out_file.write('#ifndef MAYBE_EXT_HPP\n' +
                        '#define MAYBE_EXT_HPP\n\n')  # begin single
         for header_path in sorted_files:
             out_file.write(f'// region {os.path.basename(header_path)}\n\n')  # begin header

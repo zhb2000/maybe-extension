@@ -1,4 +1,3 @@
-#pragma once
 #ifndef MAYBE_EXT_HPP
 #define MAYBE_EXT_HPP
 

@@ -1,4 +1,4 @@
-project(maybe_test)
+project(maybe_tests)
 
 add_subdirectory(googletest)
 
